@@ -1,25 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Chessboard from './components/Chessboard';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    return (
+      <div className="app-container">
+      <header className="app-header">
+          <h1>Chessboard</h1>
       </header>
-    </div>
-  );
+      <main className="chessboard-container">
+        <Chessboard />
+      </main>
+      <footer className="app-footer">
+        <p> By <a href="https://github.com/karthikmudunuri" target="_blank" rel="noopener noreferrer">Karthikeya Varma</a> Woxsen university</p>
+      </footer>
+  </div>
+    );
 }
 
 export default App;
